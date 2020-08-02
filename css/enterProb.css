@@ -1,0 +1,135 @@
+h3{
+    font-style: italic;
+    text-align: center;
+    margin-top:1%;
+    font-weight: bold;
+    font-size: xx-large;
+    color:black
+}
+body{
+    background-color: rgb(142, 188, 238);
+    
+}
+.panda img{
+  height:1%;
+   width: 7%;
+   margin-left: 70%;
+   margin-top:-42% ;   
+   float:left;
+   float:top;
+   display:"inline";
+}
+.challenge img{
+    width: 240px;
+    height: 140px;
+    border-radius : 30px;
+    border-color: black;
+    border-width : 4px;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    
+    
+    
+}
+.image{
+    display:flex;
+    flex-direction:row;
+    margin-left:18%;
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 3%;
+    
+}
+.challenge{ 
+    display:flex;
+    flex-direction:column;
+    
+    
+    padding-right: 5%;   
+    
+}
+.challenge:hover img{
+    
+    margin-top:-3% ;
+
+}
+p{
+    padding-top: 0px;
+    font-size: xx-small;
+}
+.casper img{
+  width:5%;
+  height:25%;
+  margin-top:5%;
+  align-content: center;
+  margin-left:30%;
+}
+input[type="checkbox"][id^="myCheckbox"] {
+    display: none;
+  }
+  
+  label {
+    border: 1px solid rgb(142, 188, 238);
+    
+    display: block;
+    position: relative;
+    
+    cursor: pointer;
+  }
+  
+  label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgb(142, 188, 238);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  
+  label img {
+    
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  
+  :checked + label {
+    border-color: rgb(142, 188, 238);
+  }
+  
+  :checked + label:before {
+    content: "✓";
+    background-color: rgb(5, 1, 1);
+    margin-left:-3%;
+    transform: scale(1);
+    margin-top:3%;
+  }
+  
+  :checked + label img {
+    transform: scale(0.9);
+    /* box-shadow: 0 0 5px #333; */
+    z-index: -1;
+  }
+  button{
+    margin-left: 43.3%;
+    width: 10%;
+    background-color: lightblue;
+    font-weight: bolder;
+    font-size: large;
+    margin-top: 3%;
+    line-height: 300%;
+    border-radius: 25px;
+    border-color: black;
+    border-width: thick;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }

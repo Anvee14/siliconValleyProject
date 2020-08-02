@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/enterProb.css" />
+
+        <script language="javascript" type="text/javascript" src="../userInfo.js"></script>
+        <script language="javascript" type="text/javascript" src="../myApp.js"></script>
+        <script>
+            var name = getParams().get('name')
+            name = name.charAt(0).toUpperCase() + name.slice(1) 
+        </script>
+    </head>
+    <body>
+     <h3 id='nickname'>
+        <script>
+            document.getElementById("nickname").innerHTML = 
+            "Hello " + name + "<BR>"+
+            "What Challenges are You Facing.....?"
+        </script>
+     </h3>
+    
+    <form class="form2" method="get" id="form2" action="questions.html">
+     <div class = "image">
+         <div class = "challenge">
+            
+             Anxiety
+             <p></p>
+             <input type="checkbox" id="myCheckbox1" name="challenge" value="Anxiety"  />
+             <label for="myCheckbox1">
+             <img src="../images/Anxiety.png"/>
+            </label>
+         </div>
+
+         <div class = "challenge">
+             Stress
+             <p></p>
+             <input type="checkbox" id="myCheckbox2" name="challenge" value="Stress"  />
+             <label for="myCheckbox2">
+            <img src="../images/stress.png"/>
+            </label>
+        </div>
+
+        <div class = "challenge">
+            Depression
+            <p></p>
+            <input type="checkbox" id="myCheckbox3" name="challenge" value="Depression" />
+            <label for="myCheckbox3">
+            <img src="../images/depression.png"/>
+            </label>
+        </div>
+    </div>
+
+        <div class = "image">
+
+        <div class = "challenge">
+            Sleep Problem
+            <p></p>
+            <input type="checkbox" id="myCheckbox4" name="challenge" value="Sleep Problem" />
+            <label for="myCheckbox4">
+            <img src="../images/sleep.png"/>
+            </label>
+        </div>
+
+        <div class = "challenge">
+            Loneliness
+            <p></p>
+            <input type="checkbox" id="myCheckbox5" name="challenge" value="Loneliness" />
+            <label for="myCheckbox5">
+            <img src="../images/loneliness.png"/>
+            </label>
+        </div>
+
+        <div class = "challenge">
+            Self Esteem
+            <p></p>
+                      
+            <input type="checkbox" id="myCheckbox6" name="challenge" value="Self Esteem" />
+            <label for="myCheckbox6"> 
+            <img src="../images/selfesteem.png" />
+            </label>
+            </div>
+            <input type="hidden" name="name" id="name"/>
+            <script>document.getElementById("name").value = name</script>
+     </div>
+    </form>
+    <div class = "panda">
+        <img src = "../images/pandaHi.png"/>
+    </div>
+    <script>
+    console.log(screen.width,screen.height)
+    </script>
+<button class="button" type="submit" form="form2" value="Enter">Next</button>
+    </body>
+    </html>  

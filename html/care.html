@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/care.css" />
+        <script language="javascript" type="text/javascript" src="../myApp.js"></script>
+    </head>
+    <body>
+        <h3>So...do you want proffesional treatment or self care?</h3>
+        <form class="form3" method="get" id="form3" action="choice.html">
+        <div class="care">
+            <div class = "cares">
+                Self Care
+                <p></p>
+                <input type="radio" id="myCheckbox1" name="carename" value="selfCare"  />
+                <label for="myCheckbox1">
+                <img src="../images/selfCare.png"/>
+                </label>
+            </div>
+            <div class = "cares">
+                Therapist
+                <p></p>
+                <input type="radio" id="myCheckbox2" name="carename" value="therapist"  />
+                <label for="myCheckbox2">
+                <img src="../images/therapist.png"/>
+                </label>
+            </div>
+        </div>
+        <button class="button" type="submit"  value="Enter" 
+            onclick="return checkRadio('myCheckbox1') || checkRadio('myCheckbox2')">Next</button> 
+    </form>
+          
+    </body>
+</html>

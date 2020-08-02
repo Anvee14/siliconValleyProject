@@ -1,0 +1,93 @@
+body{
+    background-image: url("../images/bg1.jpeg");
+  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y:20%;
+    
+
+ }
+.index{
+    color: rgb(0, 0, 0);
+    font-size:x-large;
+    font-style: oblique;
+
+ }
+.form1{
+    font-size:x-large;
+    font-style: oblique;
+    margin-top:0.5%;
+    margin-left:45%;
+ }
+.button{
+    float:left;
+    margin-top:5%;
+    margin-left:45%;
+    background-color: rgb(255, 255, 255);
+    font-weight:bold;
+    font-size: large;
+    line-height: 220%;
+    width: 7%;
+    border-radius: 20px;
+    border-color: black;
+    border-width: medium;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+ }
+ button[type=submit]:hover {
+   background-color: rgb(144, 211, 255);
+
+ }
+h1{
+    margin-top:3%;
+    margin-left:45%;
+    
+ }
+h5{
+   
+    margin-top:3%;
+    margin-left:30%;
+    font-size:95%;
+    text-align: left;
+    display:"inline";
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+ }
+.panda img{
+   height:7%;
+   width: 7%;
+   margin-left: 45%;
+   margin-top:6.5% ;   
+   float:left;
+   float:top;
+   display:"inline";
+}
+.happyLoop img{
+   height:30%;
+   width: 20%;
+   float:left;
+   float:top;
+   margin-right:70%;
+}
+input[type=text]{
+   float:left;
+   float: top;
+   display:"inline";
+   background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: large;
+    line-height: 230%;
+    width: 15%;
+    margin-left: -7%;
+    border-radius: 20px;
+    border-color: black;
+    border-width: medium;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    align-content: center;
+    margin-top:2%;
+    position: absolute;
+}
+h6{
+   margin-top:-2%;
+   margin-left:45%;
+   opacity: 0%;
+ }
