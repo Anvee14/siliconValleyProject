@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="../css/questions.css" />
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/questions.css" />
+    <script language="javascript" type="text/javascript" src="../myApp.js"></script> 
+  </head>
+  <body>
+    <h1 id = "challenge"></h1>
+  
+    <div class="row">
+    <div class="question1">
+      <div class="ques1">
+        <p id = "ques1"> </p>
+      </div>
 
-        <script language="javascript" type="text/javascript" src="../myApp.js"></script>
-        
-    </head>
-    <body>
-        <h1 id = "challenge"></h1>
-        <div class="panda">
-          <img src= "../images/panda.png"/>
+      <div class = "input1">
+        <input type="radio" id="Often" name="ans" value="Often">
+          <label for="Often">Often</label><br>
+        <input type="radio" id="Rarely" name="ans" value="Rarely">
+          <label for="Rarely">Rarely</label><br>
+        <input type="radio" id="Never" name="ans" value="Never">
+          <label for="Never">Never</label>
+      </div>
+  </div>
+    <div class="v1"></div>
+      <div class="question2">
+        <div class="ques2">
+          <p id = "ques2"> </p>
         </div>
-        
-        <div class="question1">
-        <div class="ques1">
-          <p id = "ques1"> </p>
-        </div>
-            <div class = "input1">
-            <input type="radio" id="Often" name="ans" value="Often">
-            <label for="Often">Often</label><br>
-            <input type="radio" id="Rarely" name="ans" value="Rarely">
-            <label for="Rarely">Rarely</label><br>
-            <input type="radio" id="Never" name="ans" value="Never">
-            <label for="Never">Never</label>
-          </div>
-        </div>
-          
+      <div class = "input2">
+        <input type="radio" id="Often1" name="ans1" value="Often">
+          <label for="Often1">Often</label><br>
+        <input type="radio" id="Rarely1" name="ans1" value="Rarely">
+          <label for="Rarely1">Rarely</label><br>
+        <input type="radio" id="Never1" name="ans1" value="Never">
+          <label for="Never1">Never</label>
+      </div>
+  </div>
+    </div>
+    <div class="panda">
+      <img src= "../images/panda.png"/>
+    </div> 
+    <div>
+    <button class="button" type="submit"  value="Enter" onclick="getQuestions()">Next</button>
+      <!----      <h3>These questions were to build profile and suggest the best ways to help user instill positive thinking and make happy</h3> ---->   
+    </div>
+   <script>
+      getChallenges()
+      getQuestions()
+    </script>
 
-          <div class="question2">
-            <div class="ques2">
-              <p id = "ques2"> </p>
-            </div>
-            <div class = "input2">
-            <input type="radio" id="Often1" name="ans1" value="Often">
-            <label for="Often1">Often</label><br>
-            <input type="radio" id="Rarely1" name="ans1" value="Rarely">
-            <label for="Rarely1">Rarely</label><br>
-            <input type="radio" id="Never1" name="ans1" value="Never">
-            <label for="Never1">Never</label>
-          </div>
-        </div>
-          <div class="vl"></div>
-         
-            <button class="button" type="submit"  value="Enter" onclick="getQuestions()">Next</button>
-      <!----      <h3>These questions were to build profile and suggest the best ways to help user instill positive thinking and make happy</h3> ---->
-
-         <script>
-             getChallenges()
-             getQuestions()
-          </script>
-
-        </body>
+  </body>
 </html>
