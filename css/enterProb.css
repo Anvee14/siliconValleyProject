@@ -26,28 +26,24 @@ body{
     border-color: black;
     border-width : 4px;
     border-style: solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
-    
-    
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.35);  
 }
+
 .image{
     display:flex;
     flex-direction:row;
-    margin-left:18%;
+    justify-content: center;
     text-align: center;
     font-size: xx-large;
     font-style: italic;
     font-weight: bold;
     margin-top: 3%;
-    
+    gap: 80px;  
 }
 .challenge{ 
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     
-    
-    padding-right: 5%;   
     
 }
 .challenge:hover img{
@@ -55,6 +51,7 @@ body{
     margin-top:-3% ;
 
 }
+
 p{
     padding-top: 0px;
     font-size: xx-small;
@@ -98,7 +95,6 @@ input[type="checkbox"][id^="myCheckbox"] {
   }
   
   label img {
-    
     transition-duration: 0.2s;
     transform-origin: 50% 50%;
   }
@@ -121,7 +117,9 @@ input[type="checkbox"][id^="myCheckbox"] {
     z-index: -1;
   }
   button{
-    margin-left: 43.3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
     width: 10%;
     background-color: lightblue;
     font-weight: bolder;

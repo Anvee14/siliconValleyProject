@@ -11,13 +11,16 @@ var questions = {"Anxiety":["How often have you been bothered by feeling nervous
 var challenges = []
 function getChallenges() {
     challenges = getParams().getAll('challenge')
-    console.log(challenges)
+    //console.log(challenges)
 }
 
 var topic = 0
 function getQuestions(){
     if (topic < challenges.length) {
-        document.getElementById("challenge").innerHTML = challenges[topic]
+        var name = getParams().get('name')
+        name = name.charAt(0).toUpperCase() + name.slice(1) 
+        document.getElementById("challenge").innerHTML = "Hello "+ name +
+                     "<BR>Please answer following questions related to<BR>" + challenges[topic]
         document.getElementById("ques1").innerHTML = questions[challenges[topic]][0];
         document.getElementById("ques2").innerHTML = questions[challenges[topic]][1];
         topic++
@@ -31,15 +34,12 @@ function getQuestions(){
        window.open('care.html',"_self")
     }
 
-  
-
-
 }
 
 function getParams() {
    const queryString = window.location.search;
    const urlParams = new URLSearchParams(queryString);
-   console.log(urlParams.getAll('carename'))
+  //` console.log(urlParams.getAll('carename'))
    return(urlParams)
 
 }
