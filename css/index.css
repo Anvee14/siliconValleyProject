@@ -1,11 +1,10 @@
 body{
-    background-image: url("../images/bg1.jpeg");
+   background-image: url("../images/bg1.jpeg");
   
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y:20%;
+    background-size: 100% 91.5%;
+    overflow:hidden;
     
-
  }
 .index{
     color: rgb(0, 0, 0);
@@ -20,9 +19,10 @@ body{
     margin-left:45%;
  }
 .button{
-    float:left;
-    margin-top:5%;
-    margin-left:45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
     background-color: rgb(255, 255, 255);
     font-weight:bold;
     font-size: large;
@@ -32,60 +32,55 @@ body{
     border-color: black;
     border-width: medium;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+    
  }
  button[type=submit]:hover {
    background-color: rgb(144, 211, 255);
 
  }
 h1{
-    margin-top:3%;
-    margin-left:45%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
     
  }
 h5{
-   
-    margin-top:3%;
-    margin-left:30%;
+    margin-left: auto;
+    margin-right: auto;
     font-size:95%;
-    text-align: left;
-    display:"inline";
+    display: block;
+    text-align: center;
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
  }
 .panda img{
-   height:7%;
-   width: 7%;
-   margin-left: 45%;
-   margin-top:7% ;   
-   float:left;
-   float:top;
-   display:"inline";
+    
+    height:7%;
+    width: 7%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-.happyLoop img{
-   height:30%;
-   width: 20%;
-   float:left;
-   float:top;
-   margin-right:70%;
-}
-input[type=text]{
-   float:left;
-   float: top;
-   display:"inline";
-   background-color: rgb(255, 255, 255);
+
+ input{
+   
+    display: inline-block;
+    margin-left: -3%;
+    margin-right: auto;
+    margin-top: -2%;
     font-weight: bold;
-    font-size: large;
-    line-height: 230%;
-    width: 15%;
-    margin-left: -7%;
-    border-radius: 20px;
-    border-color: black;
-    border-width: medium;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    align-content: center;
-    margin-top:2%;
-    position: absolute;
+   font-size: large;
+   border-width: medium;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+   border-radius: 20px;
+   border-color: black;
+   line-height: 230%;
+   width: 25%;
 }
+
 h6{
    margin-top:-2%;
    margin-left:45%;
