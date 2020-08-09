@@ -13,11 +13,9 @@ body{
 .panda img{
   height:1%;
    width: 7%;
-   margin-left: 70%;
-   margin-top:-42% ;   
-   float:left;
-   float:top;
-   display:"inline";
+   margin-left: 75%;
+   margin-top: -20%;  
+   display: inline-block;
 }
 .challenge img{
     width: 240px;
@@ -37,13 +35,13 @@ body{
     font-size: xx-large;
     font-style: italic;
     font-weight: bold;
-    margin-top: 3%;
-    gap: 80px;  
+}
+.image > * {
+  margin: 1% 2%;
 }
 .challenge{ 
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
     
 }
 .challenge:hover img{

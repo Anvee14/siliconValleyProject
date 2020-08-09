@@ -80,8 +80,10 @@ label{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 80px;
     
+  }
+  .row > * {
+    margin: 0 2%;
   }
 
 .col {
